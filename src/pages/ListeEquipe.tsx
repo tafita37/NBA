@@ -36,9 +36,9 @@ function ListeEquipe() {
     // const jantes = jante ? JSON.parse(jante) : {};
     // console.log(jantes);
 
-    const handleClick = () => {
+    const handleClick = (idEquipe:any) => {
         // Utilisation de history.push pour naviguer vers une autre page
-        history.push(`statEquipe/${1}`);
+        history.push(`statEquipe/${idEquipe}`);
     };
     return(
         <div>
@@ -47,9 +47,25 @@ function ListeEquipe() {
                     <IonCol>Numero d'equipe</IonCol>
                     <IonCol>Equipe</IonCol>
                 </IonRow>
-                <IonRow className="tsotra" onClick={() => handleClick()}>
+                <IonRow className="tsotra" onClick={() => handleClick(1)}>
                     <IonCol>EQUIPE001</IonCol>
-                    <IonCol>Cleveland</IonCol>
+                    <IonCol>Cleveland1</IonCol>
+                </IonRow>
+                <IonRow className="tsotra" onClick={() => handleClick(2)}>
+                    <IonCol>EQUIPE002</IonCol>
+                    <IonCol>Cleveland2</IonCol>
+                </IonRow>
+                <IonRow className="tsotra" onClick={() => handleClick(3)}>
+                    <IonCol>EQUIPE003</IonCol>
+                    <IonCol>Cleveland3</IonCol>
+                </IonRow>
+                <IonRow className="tsotra" onClick={() => handleClick(4)}>
+                    <IonCol>EQUIPE004</IonCol>
+                    <IonCol>Cleveland4</IonCol>
+                </IonRow>
+                <IonRow className="tsotra" onClick={() => handleClick(5)}>
+                    <IonCol>EQUIPE005</IonCol>
+                    <IonCol>Cleveland5</IonCol>
                 </IonRow>
             </IonGrid>
         </div>
